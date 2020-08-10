@@ -1,4 +1,4 @@
-const apiUrl = 'http://127.0.0.1:7777'
+const apiUrl = 'https://spa-purejs.herokuapp.com'
 export default {
     eventReq : {
         get : (sortBy,searchTerm,filterBy) => {
