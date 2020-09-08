@@ -83,7 +83,7 @@ import dataService from './dataService.js'
         state.isSuperUser = true;
         document.querySelector('.normal-user-content').classList.add('d-none')
       }
-      console.log(window.location.search)
+
       const loginForm = document.querySelector('.login-form')
       const appContent = document.querySelector('.app-content')
       loginForm.classList.add('d-none')
