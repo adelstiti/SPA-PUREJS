@@ -76,14 +76,14 @@ import dataService from './dataService.js'
       state.searchTerm = e.target.value
       dataService.loadAll(state.sortBy,state.searchTerm,state.filterBy)
     },300))
-    
+
     if(window.location.search){
       state.userId = new URLSearchParams(window.location.search).get('id');
       if(state.userId === superUserId){
         state.isSuperUser = true;
         document.querySelector('.normal-user-content').classList.add('d-none')
       }
-
+      console.log(window.location.search)
       const loginForm = document.querySelector('.login-form')
       const appContent = document.querySelector('.app-content')
       loginForm.classList.add('d-none')
